@@ -10,6 +10,6 @@ def predictions(weather_turnstile):
     x = weather_turnstile[['rain', 'Hour', 'EXITSn_hourly']]
     x = sm.add_constant(x)
     model = sm.OLS(y, x)
-    model_fit = model.fit()
-
-    return model_fit.predict()
+    results = model.fit()
+    
+    return results.predict()

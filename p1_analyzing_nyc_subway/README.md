@@ -34,27 +34,27 @@ I used OLS using Statsmodels.
 
 #### 2.2 What features (input variables) did you use in your model? Did you use any dummy variables as part of your features?
 
-The features I used in the model were “Hour”, “EXITSn_hourly”, and “rain” without any dummy variables.
+The features I used in the model were "rain", "Hour", "meantempi", "meanpressurei", and "meanwindspdi". "UNIT" was used as the dummy variable.
 
 #### 2.3 Why did you select these features in your model? We are looking for specific reasons that lead you to believe that the selected features will contribute to the predictive power of your model.
 
-Initially, I used rain and Hour as features because I thought that they may affect people’s decision for riding or not riding the NYC subway.
-However, the R squared value is only 0.031. So, I decided to include 'EXITSn_hourly' to the existing features and it improved the R squared value to 0.557.
+I thought that these features may affect people’s decision for riding or not riding the NYC subway. Initially, I used "rain" with "UNIT" dummy variable in the model and then I got the R-squared value 0.418. After that, I included "Hour" and it improved the R-squared value to 0.458. Finally, I decided to include "meantempi", "meanpressurei", and "meanwindspdi" to the model and then the R-squared value was improved to 0.459.
 
 #### 2.4 What are the coefficients (or weights) of the non-dummy features in your linear regression model?
 
-+ rain: 6.2476
-+ Hour: 19.7591
-+ EXITSn_hourly: 0.8552
++ rain: -18.1987
++ Hour: 67.4003
++ meantempi: -5.6176
++ meanpressurei: -265.8013
++ meanwindspdi: 21.6812
 
 #### 2.5 What is your model’s R2 (coefficients of determination) value?
 
-The R squared value is 0.557.
+The R squared value is 0.459.
 
 #### 2.6 What does this R2 value mean for the goodness of fit for your regression model? Do you think this linear model to predict ridership is appropriate for this dataset, given this R2 value?
 
-From the R squared value, 55.7% of the variance in the response variable can be explained by the regression model.
-I think this linear model to predict ridership is appropriate for this dataset from the given R squared value.
+From the R squared value, 45.9% of the variance can be explained by the regression model. I think this linear model to predict ridership isn’t appropriate for this dataset.
 
 ## Section 3. Visualization
 

@@ -8,6 +8,8 @@ I used the Mann Whitney U-test to analyze the NYC subway data. I used a two-tail
 The null hypothesis is that two populations on rainy and non-rainy days have the same mean.
 My p-critical value is 0.05.
 
+> To get the two-sided P value, the P value returned by scipy.stats.mannwhitneyu must be multiplied by 2.
+
 #### 1.2 Why is this statistical test applicable to the dataset? In particular, consider the assumptions that the test is making about the distribution of ridership in the two samples.
 
 Because rainy and non-rainy days histograms are not normally distributed as shown in section 3.1 and
@@ -58,6 +60,8 @@ The R squared value is 0.459.
 #### 2.6 What does this R2 value mean for the goodness of fit for your regression model? Do you think this linear model to predict ridership is appropriate for this dataset, given this R2 value?
 
 From the R squared value, 45.9% of the variance can be explained by the regression model. I think this linear model to predict ridership isn’t appropriate for this dataset.
+
+![](https://raw.githubusercontent.com/Anumodana/udacity-data-science/master/p1_analyzing_nyc_subway/images/Histogram%20of%20Residuals.png)
 
 ## Section 3. Visualization
 

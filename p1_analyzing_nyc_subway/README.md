@@ -22,7 +22,9 @@ the Mann Whitney U-test is suitable for testing two populations with unknown dis
 
 #### 1.4 What is the significance and interpretation of these results?
 
-The null hypothesis is rejected due to 0.025 < 0.05 indicates that there is a statistically significant difference in ridership between rainy and non-rainy days.
+The null hypothesis is rejected due to 0.025 < 0.05 indicates that
+there is a statistically significant difference in ridership between
+rainy and non-rainy days.
 
 ## Section 2. Linear Regression
 

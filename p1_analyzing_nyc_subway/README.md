@@ -59,11 +59,13 @@ The R squared value is 0.459.
 
 #### 2.6 What does this R2 value mean for the goodness of fit for your regression model? Do you think this linear model to predict ridership is appropriate for this dataset, given this R2 value?
 
-From the R squared value, 45.9% of the variance can be explained by the regression model. From the R squared value and the following graphs, I think this linear model to predict ridership isn’t appropriate for this dataset.
+From the R squared value, 45.9% of the variance can be explained by the regression model. Given the R squared value and the following graphs, I think this linear model to predict ridership isn’t appropriate for this dataset.
 
 ![](https://raw.githubusercontent.com/Anumodana/udacity-data-science/master/p1_analyzing_nyc_subway/images/Histogram%20of%20Residuals.png)
 
 ![](https://raw.githubusercontent.com/Anumodana/udacity-data-science/master/p1_analyzing_nyc_subway/images/Predicted%20vs%20Actual%20ENTRIESn_hourly.png)
+
+![](https://raw.githubusercontent.com/Anumodana/udacity-data-science/master/p1_analyzing_nyc_subway/images/Residuals%20vs%20Index.png)
 
 ## Section 3. Visualization
 
@@ -100,10 +102,6 @@ are 1105.446 and 1090.279 respectively. Thus, there is a higher chance that more
 
 #### 5.1 Please discuss potential shortcomings of the methods of your analysis.
 
-> To meet expectations in this section it is necessary to explore a bit more thoroughly the intuition about the limitedness of the linear model and its implications: Continuing with the reasoning started discussing the residuals in 2.6 it might be interesting to plot the residual per data point, some patterns might emerge to help understand some limitations emerging from applying a linear model to this problem, so by merely plotting the difference between predictions and actual values (residuals) you will, most likely, see that the residuals follow a cyclical pattern. If so, that might prove that some non-linearity in the data should be addressed by designing a non linear model. The code is really simple and looks like this: import matplotlib.pyplot as pltplt.plot(data - predictions) plt.show()
-
-> This is not mandatory, you could simply extend the conclusions from the residual analysis in 2.6 to meet specifications.
-
 **Dataset**
 + Only data on May 2011 included in the dataset that I analyzed.
 If the sample size of data is increased, the analysis may be changed.
@@ -111,9 +109,7 @@ If the sample size of data is increased, the analysis may be changed.
 depends on several factors other than the weather.
 
 **Analysis**
-![](https://raw.githubusercontent.com/Anumodana/udacity-data-science/master/p1_analyzing_nyc_subway/images/Residuals%20vs%20Index.png)
-
-
++ From section 2.6, we can see that the linear model is not a good fit to this dataset. It seems data appears to be non-linear. From Residuals graph, they are not symmetrically distributed.
 
 ## References
 

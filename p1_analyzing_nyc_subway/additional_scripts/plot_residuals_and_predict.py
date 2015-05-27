@@ -14,10 +14,12 @@ def predictions(weather_turnstile):
     model = sm.OLS(y, x)
     model_fitted = model.fit()
 
-    plot_residuals_histogram(model_fitted.res)
+    plot_residuals_histogram(model_fitted.resid)
 
     predict = model_fitted.predict()
-    plot(y - predict, 'Residuals')
+    plot_residuals(y - predict, 'Residuals')
+
+    plot_predicted_vs_actual(predict, y)
 
     return predict
 
@@ -28,10 +30,20 @@ def plot_residuals_histogram(res):
     plt.ylabel('Frequency')
     plt.show()
 
-def plot(res, ylabel):
-	plt.plot(res)
+def plot_residuals(res, ylabel):
+    plt.title('Residuals')
+    plt.plot(res, '.')
     plt.xlabel('Index')
     plt.ylabel(ylabel)
+    plt.show()
+
+def plot_predicted_vs_actual(predict, actual):
+    m, b = np.polyfit(predict, actual, 1)
+    plt.plot(predict, actual, 'o')
+    plt.plot(predict, m*predict + b, '-')
+    plt.title('Predicted vs Actual ENTRIESn_hourly')
+    plt.xlabel('Predicted ENTRIESn_hourly')
+    plt.ylabel('Actual ENTRIESn_hourly')
     plt.show()
 
 

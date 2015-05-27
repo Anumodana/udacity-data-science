@@ -109,7 +109,7 @@ If the sample size of data is increased, the analysis may be changed.
 depends on several factors other than the weather.
 
 **Analysis**
-+ From section 2.6, we can see that the linear model is not a good fit to this dataset. It seems data appears to be non-linear. They are not symmetrically distributed in the Residuals graph.
++ From section 2.6, we can see that the linear model is not a good fit to this dataset. It seems data appears to be non-linear. They are not symmetrically distributed in the Residuals graph. We may try to analyze data by using non-linear model instead.
 
 ## References
 

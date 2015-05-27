@@ -5,11 +5,12 @@
 #### 1.1 Which statistical test did you use to analyze the NYC subway data? Did you use a one-tail or a two-tail P value? What is the null hypothesis? What is your p-critical value?
 
 I used the Mann Whitney U-test to analyze the NYC subway data. I used a two-tail P value.
-The null hypothesis is the ridership between rainy and non-rainy days is the same. My p-critical value is 0.05.
+The null hypothesis is that two populations on rainy and non-rainy days have the same mean.
+My p-critical value is 0.05.
 
 #### 1.2 Why is this statistical test applicable to the dataset? In particular, consider the assumptions that the test is making about the distribution of ridership in the two samples.
 
-Because the number of hourly entries is a non-normal distribution as shown in 3.1 and
+Because rainy and non-rainy days histograms are not normally distributed as shown in section 3.1 and
 the Mann Whitney U-test is suitable for testing two populations with unknown distributions.
 
 #### 1.3 What results did you get from this statistical test? These should include the following numerical values: p-values, as well as the means for each of the two samples under test.
@@ -21,7 +22,7 @@ the Mann Whitney U-test is suitable for testing two populations with unknown dis
 
 #### 1.4 What is the significance and interpretation of these results?
 
-The null hypothesis is rejected due to 0.025 < 0.05 indicates that the ridership is different between rainy and non-rainy days.
+The null hypothesis is rejected due to 0.025 < 0.05 indicates that there is a statistically significant difference in ridership between rainy and non-rainy days.
 
 ## Section 2. Linear Regression
 
@@ -83,7 +84,7 @@ There is a higher chance that more people ride the NYC subway on rainy days than
 
 #### 4.2 What analyses lead you to this conclusion? You should use results from both your statistical tests and your linear regression to support your analysis.
 
-From the analyses, the null hypothesis that the ridership between rainy and non-rainy days is the same was rejected
+From the analyses, the null hypothesis that two populations between rainy and non-rainy days have the same mean was rejected
 due to the p-value, 0.025, is less than the p-critical value, 0.05. The mean of ENTRIESn_hourly on rainy and non-rainy days
 are 1105.446 and 1090.279 respectively. Thus, there is a higher chance that more people ride the NYC subway on rainy days than on non-rainy days.
 
@@ -101,3 +102,4 @@ depends on several factors other than the weather.
 + http://pandas.pydata.org/pandas-docs/stable/visualization.html
 + https://github.com/yhat/ggplot
 + http://statsmodels.sourceforge.net/devel/examples/notebooks/generated/ols.html
++ http://graphpad.com/guides/prism/6/statistics/index.htm?one-tail_vs__two-tail_p_values.htm

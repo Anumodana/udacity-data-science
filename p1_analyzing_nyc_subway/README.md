@@ -63,14 +63,14 @@ From the R squared value, 45.9% of the variance can be explained by the regressi
 
 #### 3.1 One visualization should contain two histograms: one of  ENTRIESn_hourly for rainy days and one of ENTRIESn_hourly for non-rainy days.
 
-![](https://photos-5.dropbox.com/t/2/AADCYAbVAJVFp_JZaCpfbX43VRfMHW0AWQVentD0wTQd5g/12/365200479/png/32x32/1/1432486800/0/2/histogram%20of%20ENTRIESn_hourly.png/CN-Ikq4BIAEgAiADIAQgBSAGKAE/ZyjvokeM5cmyNs_Sf0m93xQtIj6sndE9z9snjyFWoSA?size_mode=5)
+![](https://raw.githubusercontent.com/Anumodana/udacity-data-science/master/p1_analyzing_nyc_subway/images/ENTRIESn_hourly%20histogram.png)
 
 From the above data visualization, it indicates that the ridership for non-rainy days and rainy days is not normally distributed.
 Moreover, the frequency of ENTRIESn_hourly for non-rainy days is higher than rainy days.
 
 #### 3.2 One visualization can be more freeform.
 
-![](https://photos-3.dropbox.com/t/2/AAC93eh7KIwiN0d3TJkOJp90KErcXiMCitoqQ4vHbeG5zw/12/365200479/png/32x32/1/1432486800/0/2/AvgHourlyEntriesEachDay.png/CN-Ikq4BIAEgAiADIAQgBSAGKAE/I-_aoep2-LinDiK0JK63FxMxpP82peWXkm9KPElETfI?size_mode=5)
+![](https://raw.githubusercontent.com/Anumodana/udacity-data-science/master/p1_analyzing_nyc_subway/images/average_entries_per_day.png)
 
 The above data visualization shows the average subway ridership by hour in each day.
 Few people ride the NYC subway system between 2am and 7am everyday.

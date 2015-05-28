@@ -20,11 +20,12 @@ the Mann Whitney U-test is suitable for testing two populations with unknown dis
 + Mean entries with rain = 1105.4463767458733
 + Mean entries without rain = 1090.278780151855
 + U = 1924409167.0
-+ p-value = 0.024999912793489721 ~ 0.025
++ One-tailed p-value = 0.024999912793489721 ~ 0.025
++ Two-tailed p-value ~ 0.05
 
 #### 1.4 What is the significance and interpretation of these results?
 
-The null hypothesis is rejected due to 0.025 < 0.05 indicates that
+The null hypothesis is rejected. It indicates that
 there is a statistically significant difference in ridership between
 rainy and non-rainy days.
 

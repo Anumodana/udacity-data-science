@@ -20,18 +20,18 @@ Please complete the function 'key_type'.
 
 lower = re.compile(r'^([a-z]|_)*$')
 lower_colon = re.compile(r'^([a-z]|_)*:([a-z]|_)*$')
-problemchars = re.compile(r'[=\+/&<>;\'"\?%#$@\,\. \t\r\n]|[A-Z]')
+problemchars = re.compile(r'[=\+/&<>;\'"\?%#$@\,\. \t\r\n]')
 
 
 def key_type(element, keys):
     if element.tag == "tag":
         for tag in element.iter('tag'):
             k = tag.attrib['k']
-            if lower.match(k):
+            if lower.search(k):
                 keys['lower'] += 1
-            elif lower_colon.match(k):
+            elif lower_colon.search(k):
                 keys['lower_colon'] += 1
-            elif problemchars.match(k):
+            elif problemchars.search(k):
                 keys['problemchars'] += 1
             else:
                 keys['other'] += 1

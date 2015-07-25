@@ -35,7 +35,7 @@ def key_type(element, keys):
                 keys['problemchars'] += 1
             else:
                 keys['other'] += 1
-        
+
     return keys
 
 
